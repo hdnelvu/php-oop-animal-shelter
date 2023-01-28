@@ -19,7 +19,7 @@ Created as a school project.
 - [@hdnelvu](https://www.github.com/hdnelvu)
 
 
-## Helpers
+## Thanks for help
 
 - [@YoiSenshu](https://www.github.com/YoiSenshu)
 - [ChatGPT](https://chat.openai.com/chat)
