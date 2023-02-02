@@ -14,6 +14,17 @@ class Shelter
         self::$instance = $this;
     }
 
+    public function printAllAnimals(){
+        foreach ($this->petHouses as $petHouse)
+        {
+            foreach ($petHouse->animals as $pet)
+            {
+                echo "<li>$pet</li>";
+                echo "<br><br>";
+            }
+        }
+    }
+
     public static function getInstance()
     {
         if (self::$instance == null) {

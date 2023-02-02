@@ -7,6 +7,7 @@ abstract class Animal
     protected $race;
     protected $weight;
     protected $gender;
+    protected $type;
 
     public function __construct($name, $age, $race, $weight, $gender)
     {

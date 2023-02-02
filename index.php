@@ -32,7 +32,7 @@ require_once 'Shelter.php';
 
 // Creating Dog object
 
-$dog = new Dog("Miko", 3,"York", 2.35, "Male", 13, ["Speak", "Wave", "Spin", "Take a bow", "Roll over"]);
+$dog = new Dog("Miko", 3,"York", 2.35, "Male", 13, ["Shout", "Wave", "Spin", "Take a bow", "Roll over"]);
 
 
 // Displaying Dog object
@@ -169,7 +169,7 @@ echo "<br><br>";
 
 // Letting adopter adopt dog
 
-$shelter->adoptAnimal($dog, $adopter);
+//$shelter->adoptAnimal($dog, $adopter);
 echo "<br><br>";
 
 
@@ -183,7 +183,6 @@ echo "<br><br>";
 // Checking if adopter now has any pets
 echo "$adopter";
 echo "<br><br>";
-
 
 
 // Hiring an employee
@@ -203,3 +202,18 @@ echo "<br><br>";
 // Checking final information's about shelter
 
 echo $shelter;
+
+
+// Adding and outprinting all animals from shelter
+$dog2 = new Dog("Andrew", 3,"Dalmatian", 10, "Male", 13, ["Spin", "Take a bow", "Roll over"]);
+$dog3 = new Dog("Andrdsadsaew", 3,"Dalmatian", 10, "Male", 13, ["Spin", "Take a bow", "Roll over"]);
+
+$shelter->addAnimal($dog2);
+$shelter->addAnimal($dog3);
+echo "<br><br>";
+
+
+echo "All animals:";
+echo "<br>";
+
+$shelter->printAllAnimals();
